@@ -6,15 +6,15 @@ class ArbolNodo(object):
         self.der=None
 
 def junta_prim_nodos(lista):
-    if(len(lista)>1):
+    while(len(lista)>1):
         aux=ArbolNodo()
         aux.fre=lista[0].fre+lista[1].fre
         aux.izq,aux.der=lista[0],lista[1]
         lista.pop(0)
         lista.pop(0)
         lista.append(aux)
-    else:
-        print('La lista ya esta compuesta por una unica raiz')
+        orden_nodos(lista)
+    return lista
 
 
 def bubble_sort(collection):
@@ -40,7 +40,6 @@ def orden_nodos(lista):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
         if not swapped:
             break
-    return lista
 
 def orden_primero(dict):
     '''Introduces un diccionario y 
@@ -64,7 +63,14 @@ def orden_primero(dict):
 
 def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
-    orden_primero(dict)
+    lista=orden_primero(dict)
+    for j in lista:
+        print(f'{j.letra} , {j.fre}')
+    lista=orden_nodos(lista)
+    print('___________')
+    lista_ord=junta_prim_nodos(lista)
+    for i in lista_ord:
+        print(f'{i.letra} , {i.fre}')
 
 
 
