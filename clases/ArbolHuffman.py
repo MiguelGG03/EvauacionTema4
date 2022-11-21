@@ -66,13 +66,12 @@ def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
     lista=orden_primero(dict)
     for j in lista:
-        print(f'{j.letra} , {j.fre}')
+        print(f'CLAVE: {j.letra} ; FRECUENCIA: {j.fre}')
     lista=orden_nodos(lista)
-    print(lista)
     print('___________')
     lista_ord=junta_prim_nodos(lista)
-    for i in lista_ord:
-        print(f'{i.letra} , {i.fre}')
+    print('Arbol creado')
+    return lista_ord
 
 
 
