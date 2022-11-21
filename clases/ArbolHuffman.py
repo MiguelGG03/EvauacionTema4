@@ -7,6 +7,7 @@ class ArbolNodo(object):
 
 def crear_arbol(raiz):
     '''Crea el arbol binario'''
+    pass
 
 def bubble_sort(collection):
     length = len(collection)
@@ -21,15 +22,24 @@ def bubble_sort(collection):
     return collection
 
 def orden(dict):
+    '''Introduces un diccionario y 
+    devuelve una lista de nodos arbol con ramas none ordenado por frecuencias'''
     letras=[]
     lista=[]
+    for j in dict.items():
+        aux=ArbolNodo()
+        aux.letra,aux.fre=j[0],j[1]
+        lista.append(aux)
+    for i in lista:
+        print(i.letra)
+        print(i.fre)
+    '''
     for i in dict.keys():
         lista.append(dict[i])
-    buble_sort(lista)
+    bubble_sort(lista)
+    print(lista)
+    '''
 
 if __name__=='__main__':
-    lista=[3,4,7,1,14,12,8,21,67,2]
-    lista_ord=bubble_sort(lista)
-    print(lista_ord)
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
     orden(dict)
