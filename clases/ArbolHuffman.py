@@ -5,10 +5,6 @@ class ArbolNodo(object):
         self.izq=None
         self.der=None
 
-def crear_arbol(raiz):
-    '''Crea el arbol binario'''
-    pass
-
 def bubble_sort(collection):
     length = len(collection)
     for i in range(length - 1):
