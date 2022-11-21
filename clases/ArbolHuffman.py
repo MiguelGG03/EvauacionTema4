@@ -32,11 +32,9 @@ def orden_nodos(lista):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
         if not swapped:
             break
-    for i in lista:
-        print(f'{i.letra} , {i.fre}')
     return lista
 
-def orden(dict):
+def orden_primero(dict):
     '''Introduces un diccionario y 
     devuelve una lista de nodos arbol con ramas none ordenado por frecuencias'''
     lista=[]
@@ -53,8 +51,6 @@ def orden(dict):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
         if not swapped:
             break
-    for i in lista:
-        print(f'{i.letra} , {i.fre}')
     return lista
     
 
