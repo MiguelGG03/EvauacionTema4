@@ -40,6 +40,7 @@ def orden_nodos(lista):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
         if not swapped:
             break
+    return lista
 
 def orden_primero(dict):
     '''Introduces un diccionario y 
@@ -67,6 +68,7 @@ def main_ej1():
     for j in lista:
         print(f'{j.letra} , {j.fre}')
     lista=orden_nodos(lista)
+    print(lista)
     print('___________')
     lista_ord=junta_prim_nodos(lista)
     for i in lista_ord:
