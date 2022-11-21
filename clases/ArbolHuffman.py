@@ -57,6 +57,14 @@ def orden_primero(dict):
     return lista
     
 
-if __name__=='__main__':
+def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
     orden_primero(dict)
+
+
+
+
+
+
+if __name__=='__main__':
+    main_ej1()
