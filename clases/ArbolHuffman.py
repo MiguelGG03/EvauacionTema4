@@ -18,3 +18,10 @@ def bubble_sort(collection):
         if not swapped:
             break  # Stop iteration if the collection is sorted.
     return collection
+
+'''
+if __name__=='__main__':
+    lista=[3,4,7,1,14,12,8,21,67,2]
+    lista_ord=bubble_sort(lista)
+    print(lista_ord)
+'''
