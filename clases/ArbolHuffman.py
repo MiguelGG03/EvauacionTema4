@@ -8,6 +8,11 @@ class ArbolNodo(object):
 def junta_prim_nodos(lista):
     if(len(lista)>1):
         aux=ArbolNodo()
+        aux.fre=lista[0].fre+lista[1].fre
+        aux.izq,aux.der=lista[0],lista[1]
+        lista.pop(0)
+        lista.pop(0)
+        lista.append(aux)
     else:
         print('La lista ya esta compuesta por una unica raiz')
 
