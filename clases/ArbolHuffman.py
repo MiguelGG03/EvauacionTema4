@@ -21,6 +21,21 @@ def bubble_sort(collection):
             break  # Stop iteration if the collection is sorted.
     return collection
 
+def orden_nodos(lista):
+    '''Introduces una lista de nodos arbol y te la ordena por frecuencias'''
+    length = len(lista)
+    for i in range(length - 1):
+        swapped = False
+        for j in range(length - 1 - i):
+            if lista[j].fre > lista[j + 1].fre:
+                swapped = True
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+        if not swapped:
+            break
+    for i in lista:
+        print(f'{i.letra} , {i.fre}')
+    return lista
+
 def orden(dict):
     '''Introduces un diccionario y 
     devuelve una lista de nodos arbol con ramas none ordenado por frecuencias'''
