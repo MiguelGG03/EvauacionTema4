@@ -5,6 +5,13 @@ class ArbolNodo(object):
         self.izq=None
         self.der=None
 
+def junta_prim_nodos(lista):
+    if(len(lista)>1):
+        aux=ArbolNodo()
+    else:
+        print('La lista ya esta compuesta por una unica raiz')
+
+
 def bubble_sort(collection):
     length = len(collection)
     for i in range(length - 1):
