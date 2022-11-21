@@ -70,7 +70,8 @@ def main_ej1():
     lista=orden_nodos(lista)
     print('___________')
     lista_ord=junta_prim_nodos(lista)
-    print('Arbol creado')
+    if(lista_ord[0].fre==1):
+        print('Arbol creado')
     return lista_ord
 
 
