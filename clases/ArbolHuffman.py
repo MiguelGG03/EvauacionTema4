@@ -10,6 +10,7 @@ def junta_prim_nodos(lista):
     while(len(lista)>1):
         aux=ArbolNodo()
         aux.fre=lista[0].fre+lista[1].fre
+        aux.letra=lista[0].letra+lista[1].letra
         aux.izq,aux.der=lista[0],lista[1]
         if(aux.izq.val==None):
             aux.izq.val='0'
