@@ -78,12 +78,15 @@ def main_ej1():
     for j in lista:
         print(f'CLAVE: {j.letra} ; FRECUENCIA: {j.fre}')
     lista=orden_nodos(lista)
-    print('___________')
+    print('___________\n')
     lista_ord=junta_prim_nodos(lista)
     if(lista_ord[0].fre==1):
         print('Arbol creado')
         print(f'LETRAS RAIZ: {lista_ord[0].letra} ; FREC: {lista_ord[0].fre}')
-    return lista_ord
+        print(f'RAMA IZQ : {lista_ord[0].izq.letra} {lista_ord[0].izq.fre} ; RAMA DER : {lista_ord[0].der.letra} {lista_ord[0].der.fre}')
+    print()
+    print('____________\n')
+    cadena=input('Cadena de caracteres a codificar (AMFT013)\n>>> ')
 
 
 
