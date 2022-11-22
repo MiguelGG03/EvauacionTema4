@@ -11,6 +11,10 @@ def junta_prim_nodos(lista):
         aux=ArbolNodo()
         aux.fre=lista[0].fre+lista[1].fre
         aux.izq,aux.der=lista[0],lista[1]
+        if(aux.izq.val==None):
+            aux.izq.val='0'
+        if(aux.der.val==None):
+            aux.der.val='1'
         lista.pop(0)
         lista.pop(0)
         lista.append(aux)
@@ -64,7 +68,8 @@ def orden_primero(dict):
 
 def busqueda(dato):
     sigue=True
-    while(sigue)
+    while(sigue):
+        pass
 
 def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
