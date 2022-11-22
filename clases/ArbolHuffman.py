@@ -82,6 +82,7 @@ def main_ej1():
     lista_ord=junta_prim_nodos(lista)
     if(lista_ord[0].fre==1):
         print('Arbol creado')
+        print(f'LETRAS RAIZ: {lista_ord[0].letra} ; FREC: {lista_ord[0].fre}')
     return lista_ord
 
 
