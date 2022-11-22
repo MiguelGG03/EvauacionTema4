@@ -72,14 +72,19 @@ def busqueda(dato,raiz,codificado):
     datos=dato.split()
     codificado=''
     while(len(datos)>0):
+        if(raiz.izq.letra==datos[0]):
+            codificado=codificado+raiz.izq.val
+            
         try:
             raiz.izq.letra.split()
             for letra in raiz.izq.letra.split():
                 if(letra==datos[0]):
                     codificado=codificado+raiz.izq.val
-                    busqueda()
+                    raiz=raiz.izq
+                    busqueda(datos,raiz,codificado)
         except:
-            sigue=False
+            print('Llegaste a la hoja del arbol')
+    return codificado
 
 def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
