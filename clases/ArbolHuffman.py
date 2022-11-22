@@ -99,11 +99,16 @@ def main_ej1():
         print(f'RAMA IZQ : {lista_ord[0].izq.letra} {lista_ord[0].izq.fre} ; RAMA DER : {lista_ord[0].der.letra} {lista_ord[0].der.fre}')
     print()
     print('____________\n')
+    palabra='HOLA'
+    for letra in palabra.split():
+        print(letra)
+    print([*palabra])
+    '''
     cadena=input('Cadena de caracteres a codificar (AMFT013)\n>>> ')
     cadenasplited=cadena.split()
     resultado=busqueda(cadenasplited,lista_ord[0],'')
     print(resultado)
-
+    '''
 
 
 
