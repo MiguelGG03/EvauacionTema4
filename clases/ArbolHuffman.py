@@ -67,9 +67,11 @@ def orden_primero(dict):
             break
     return lista
 
-def busqueda(dato):
+def busqueda(dato,raiz):
     sigue=True
-    while(sigue):
+    datos=dato.split()
+    codificado=''
+    while(len(datos)>0):
         pass
 
 def main_ej1():
@@ -87,6 +89,8 @@ def main_ej1():
     print()
     print('____________\n')
     cadena=input('Cadena de caracteres a codificar (AMFT013)\n>>> ')
+    resultado=busqueda(cadena,lista_ord[0])
+    print(resultado)
 
 
 
