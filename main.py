@@ -1,7 +1,7 @@
 from clases.ArbolHuffman import main_ej1
 
 def main():
-    pr1=input('Que ejercicio deseas ver (1,2,3,4,5): ')
+    pr1=input('Que ejercicio deseas ver (1,2,3): ')
 
     if pr1=='1':
         main_ej1()
