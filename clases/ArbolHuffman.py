@@ -68,22 +68,19 @@ def orden_primero(dict):
     return lista
 
 def busqueda(dato,raiz,codificado):
-    while(len(dato)>0):
-        if(raiz.izq.letra==dato[0]):
-            codificado=codificado+raiz.izq.val
-            dato.pop(0)
-            busqueda(dato,raiz,codificado)
-        else:
-            try:
-                [*raiz.izq.letra]
-                for letra in [*raiz.izq.letra]:
-                    if(letra==dato[0]):
-                        codificado=codificado+raiz.izq.val
-                        raiz=raiz.izq
-                        busqueda(dato,raiz,codificado)
-            except:
-                print('Llegaste a la hoja del arbol')    
-    return codificado
+    if(raiz.izq.letra==dato[0]):
+        codificado=codificado+raiz.izq.val
+        print(codificado)         
+    else:
+        try:
+            [*raiz.izq.letra]
+            for letra in [*raiz.izq.letra]:
+                if(letra==dato[0]):
+                    codificado=codificado+raiz.izq.val
+                    raiz=raiz.izq
+                    busqueda(dato,raiz,codificado)
+        except:
+            print('Llegaste a la hoja del arbol')
 
 def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
@@ -101,8 +98,8 @@ def main_ej1():
     print('____________\n')
     cadena=input('Cadena de caracteres a codificar (AMFT013)\n>>> ')
     cadenasplited=[*cadena]
-    resultado=busqueda(cadenasplited,lista_ord[0],'')
-    print(resultado)
+    for letters in cadenasplited:
+        busqueda(letters,lista_ord[0],'')
 
 
 
