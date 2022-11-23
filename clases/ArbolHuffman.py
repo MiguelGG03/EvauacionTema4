@@ -70,10 +70,10 @@ def orden_primero(dict):
 def busqueda(dato,raiz,codificado):
     if(raiz.izq.letra==dato[0]):
         codificado=codificado+raiz.izq.val
-        print(codificado)
+        print(f'{dato} codificado > {codificado}')
     elif(raiz.der.letra==dato[0]):
         codificado=codificado+raiz.der.val
-        print(codificado)         
+        print(f'{dato} codificado > {codificado}')         
     else:
         try:
             [*raiz.izq.letra]
