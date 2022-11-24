@@ -1,6 +1,6 @@
 import pandas as pd
 class nodoRaiz(object):
-    
+
     def __init__(self):
         self.nombre=None
         self.numero=None
@@ -9,6 +9,7 @@ class nodoRaiz(object):
 class Pokemon(object):
 
     def __init__(self):
+        self.id=None
         self.name=None
         self.type1=None
         self.type2=None
@@ -35,6 +36,7 @@ def main_ej2():
     data=leer_csv_pkemons(data)
     for i in range(len(data)):
         pokemon=Pokemon()
+        pokemon.id=data['#'].iloc[i]
         pokemon.name=data.Name.iloc[i]
         pokemon.type1=data['Type 1'].iloc[i]
         pokemon.type2=data['Type 2'].iloc[i]
