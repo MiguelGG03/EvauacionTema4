@@ -24,7 +24,9 @@ def leer_csv_pkemons(variable):
 #Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
 
 def main_ej2():
-    pass
+    data=None
+    data=leer_csv_pkemons(data)
+    print(data.head())
 
 if __name__=='__main__':
     main_ej2()
