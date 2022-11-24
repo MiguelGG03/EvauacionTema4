@@ -94,6 +94,20 @@ def busqueda(dato,raiz,codificado):
         except:
             pass
 
+def decodificador(dato,raiz,decodificado):
+    raizini=raiz
+    for numero in [*dato]:
+        if(len([*raiz.letra])==1):
+            print(raiz.letra)
+            raiz=raizini
+        else:
+            if(numero=='0'):
+                raiz=raiz.izq
+            else:
+                raiz=raiz.der
+    return decodificado
+
+
 def main_ej1():
     dict={'A':0.2,'F':0.17,'1':0.13,'3':0.21,'0':0.05,'M':0.09,'T':0.15}
     lista=orden_primero(dict)
@@ -111,6 +125,9 @@ def main_ej1():
     cadena=input('Cadena de caracteres a codificar (AMFT013)\n>>> ')
     for letters in [*cadena]:
         busqueda(letters,lista_ord[0],'')
+    decoder=input('Cadena de caracteres a decodificar (0 1)\n>>> ')
+    decoder=decoder+' '
+    print(decodificador(decoder,lista_ord[0],''))
 
 
 
