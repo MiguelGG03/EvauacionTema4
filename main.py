@@ -7,7 +7,6 @@ def main():
     if pr1=='1':
         main_ej1()
     elif pr1=='2':
-        pass
         main_ej2()
     elif pr1=='3':
         pass
