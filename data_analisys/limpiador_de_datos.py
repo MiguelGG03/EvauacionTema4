@@ -2,13 +2,11 @@ import pandas as pd
 
 def main_cleaner():
     data= pd.read_csv('data/pokemon.csv')
-    print('H')
-    data.head()
-    print('H')
+    print(data.columns)
 
 
 
 
 
-if __name__=='_main__':
+if __name__=='__main__':
     main_cleaner()
