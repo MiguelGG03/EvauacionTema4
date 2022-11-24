@@ -1,10 +1,11 @@
 import pandas as pd
 class nodoRaiz(object):
+    
     def __init__(self):
         self.nombre=None
         self.numero=None
         self.tipo=None
-        
+
 class Pokemon(object):
 
     def __init__(self):
