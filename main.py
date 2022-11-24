@@ -1,4 +1,5 @@
 from clases.ArbolHuffman import main_ej1
+from clases.Pokemons_ej2 import main_ej2
 
 def main():
     pr1=input('Que ejercicio deseas ver (1,2,3): ')
@@ -7,7 +8,7 @@ def main():
         main_ej1()
     elif pr1=='2':
         pass
-        #main2()
+        main_ej2()
     elif pr1=='3':
         pass
         #main3()
