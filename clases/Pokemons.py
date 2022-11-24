@@ -25,8 +25,33 @@ def leer_csv_pkemons(variable):
 
 def main_ej2():
     data=None
+    pokemons_lst=[]
     data=leer_csv_pkemons(data)
-    print(data.head())
+    for i in range(len(data)):
+        pokemon=Pokemon()
+        pokemon.name=data.Name.iloc[i]
+        pokemon.type1=data['Type 1'].iloc[i]
+        pokemon.type2=data['Type 2'].iloc[i]
+        pokemon.total=data.Total.iloc[i]
+        pokemon.hp=data.HP.iloc[i]
+        pokemon.attack=data.Attack.iloc[i]
+        pokemon.defense=data.Defense.iloc[i]
+        pokemon.sp_atk=data['Sp. Atk'].iloc[i]
+        pokemon.sp_def=data['Sp. Def'].iloc[i]
+        pokemon.speed=data.Speed.iloc[i]
+        pokemon.generation=data.Generation.iloc[i]
+        pokemon.legendary=data.Legendary.iloc[i]
+        pokemons_lst.append(pokemon)
+
+
+
+
+
+
+
+
+
+
 
 if __name__=='__main__':
     main_ej2()
