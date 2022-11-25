@@ -28,7 +28,7 @@ def leer_csv_pkemons(variable):
     variable=pd.read_csv('data/pokemon.csv')
     return variable
 
-#Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+#ID,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
 
 def main_ej2():
     data=None
