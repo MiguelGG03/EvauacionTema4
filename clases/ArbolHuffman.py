@@ -97,8 +97,11 @@ def busqueda(dato,raiz,codificado):
 def decodificador(dato,raiz,decodificado):
     raizini=raiz
     for numero in [*dato]:
-        if(len([*raiz.letra])==1):
-            print(raiz.letra)
+        if((len([*raiz.izq.letra])==1)and numero=='0'):
+            print(raiz.izq.letra)
+            raiz=raizini
+        elif((len([*raiz.der.letra])==1)and numero=='1'):
+            print(raiz.der.letra)
             raiz=raizini
         else:
             if(numero=='0'):
