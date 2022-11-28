@@ -22,6 +22,7 @@ class Pokemon(object):
         self.speed=None
         self.generation=None
         self.legendary=None
+        
 
 
 def leer_csv_pkemons(variable):
@@ -50,7 +51,16 @@ def main_ej2():
         pokemon.generation=data.Generation.iloc[i]
         pokemon.legendary=data.Legendary.iloc[i]
         pokemons_lst.append(pokemon)
-
+    tree=nodoRaiz()
+    tree.nombre=pokemons_lst
+    tree.numero=pokemons_lst
+    tree.tipo=pokemons_lst
+    pr1=input('Que tipo de busqueda desea hacer\n(1 - Nombre)\n(2 - Numero)\n(3 - Tipo)\n>>>')
+    if(pr1=='1'):
+        pr2=input('Ingrese el nombre del pokemon que desea buscar\n>>>')
+        for i in range(len(tree.nombre)):
+            if(tree.nombre[i].name==pr2):
+                print(f'El pokemon {tree.nombre[i].name} es de tipo {tree.nombre[i].type1} y {tree.nombre[i].type2}')
 
 
 
