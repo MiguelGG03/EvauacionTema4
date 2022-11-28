@@ -74,6 +74,7 @@ def main_ej2():
         pr2=input('Ingrese el nombre del pokemon que desea buscar\n>>>')
         for i in range(len(tree.nombre)):
             if(tree.nombre[i].name==pr2):
+                print()
                 tree.nombre[i].__str__()
 
 
