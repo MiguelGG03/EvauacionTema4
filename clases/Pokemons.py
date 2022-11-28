@@ -74,7 +74,7 @@ def main_ej2():
         pr2=input('Ingrese el nombre del pokemon que desea buscar\n>>>')
         for i in range(len(tree.nombre)):
             if(tree.nombre[i].name==pr2):
-                print(f'El pokemon {tree.nombre[i].name} es de tipo {tree.nombre[i].type1} y {tree.nombre[i].type2}')
+                tree.nombre[i].__str__()
 
 
 
