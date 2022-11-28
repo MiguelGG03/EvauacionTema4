@@ -26,7 +26,7 @@ class Pokemon(object):
     def __str__(self):
         print(f'Nombre > {self.name} \n'
              f'ID > {self.id} \n'
-             f'Tipo 1 > {self.type1}'
+             f'Tipo 1 > {self.type1}\n'
              f'Tipo 2 > {self.type2} \n'
              f'HP > {self.hp} \n'
              f'Ataque > {self.attack} \n'
