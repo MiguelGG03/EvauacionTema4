@@ -22,6 +22,20 @@ class Pokemon(object):
         self.speed=None
         self.generation=None
         self.legendary=None
+
+    def __str__(self):
+        print(f'Nombre > {self.name} \n'
+             f'ID > {self.id} \n'
+             f'Tipo 1 > {self.type1}'
+             f'Tipo 2 > {self.type2} \n'
+             f'HP > {self.hp} \n'
+             f'Ataque > {self.attack} \n'
+             f'Defensa > {self.defense} \n'
+             f'Ataque Especial > {self.sp_atk} \n'
+             f'Defensa Especial > {self.sp_def} \n'
+             f'Velocidad > {self.speed} \n'
+             f'Generacion > {self.generation} \n'
+             f'Legendario > {self.legendary} \n')
         
 
 
