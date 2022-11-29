@@ -13,6 +13,7 @@ def main():
         #main3()
     else:
         print('Respuesta incorrecta')
+        main()
 
 if __name__=='__main__':
     main()
