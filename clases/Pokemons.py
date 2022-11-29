@@ -88,6 +88,9 @@ def main_ej2():
             if(tree.tipo[i].type1==pr2 or tree.tipo[i].type2==pr2):
                 print()
                 tree.tipo[i].__str__()
+    else:
+        print('Opcion no valida')
+        main_ej2()
 
 
 
